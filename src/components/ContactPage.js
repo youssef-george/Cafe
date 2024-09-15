@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const ContactPageContainer = styled.div`
   padding: 20px;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  min-height: 100vh;
 `;
 
 const ContactForm = styled.form`
@@ -11,6 +13,10 @@ const ContactForm = styled.form`
   gap: 10px;
   max-width: 400px;
   margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 `;
 
 const Input = styled.input`

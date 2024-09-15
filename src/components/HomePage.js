@@ -7,27 +7,34 @@ const HomePageContainer = styled.div`
 `;
 
 const HeroSection = styled.div`
-  background-image: url('/path/to/your/hero-image.jpg');
+  background-image: url('https://example.com/your-image.jpg'); /* استبدل برابط صورة الخلفية */
   background-size: cover;
   background-position: center;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: dark;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: gray;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-bottom: 40px;
 `;
 
 const HeroText = styled.h1`
   font-size: 48px;
 `;
 
+const Paragraph = styled.p`
+  font-size: 1.2rem;
+  color: #555;
+`;
+
 const HomePage = () => (
   <HomePageContainer>
     <HeroSection>
-      <HeroText>Welcome to Our Cafe</HeroText>
+      <HeroText>Welcome to MY Cafe</HeroText>
     </HeroSection>
-    <p>Your favorite place for delicious food and great ambiance.</p>
+    <Paragraph>Your favorite place for delicious food and a cozy ambiance.</Paragraph>
   </HomePageContainer>
 );
 
